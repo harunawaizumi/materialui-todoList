@@ -3,6 +3,11 @@ import React, { Component } from 'react';
 import AddTodo from "./AddTodo";
 import TodoList from "./TodoList";
 
+const mainStyle = {
+    margin: 'auto',
+    width: '50%',
+    marginTop: '100px'
+}
 
 
 class Main extends Component {
@@ -25,7 +30,7 @@ class Main extends Component {
 
   render() {
     return (
-        <div>
+        <div style={mainStyle}>
             <AddTodo
                 onTodoAdded={this.onTodoAdded}
             />
